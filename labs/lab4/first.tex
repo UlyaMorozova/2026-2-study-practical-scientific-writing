@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+
+% 2. Кодировка ввода (UTF-8)
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\section{Формулы}
+\section{Formula}
+\begin{equation}
+    D = b^2-4ac
+\end{equation}
+\label{eq:wrong} % ОШИБКА: стоит после end{equation}
+
+Ссылка на уравнение: \ref{eq:wrong} 
+\end{document}
