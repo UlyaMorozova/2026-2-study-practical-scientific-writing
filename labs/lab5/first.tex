@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+
+% 2. Кодировка ввода (UTF-8)
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{array}
+\usepackage{booktabs}
+
+
+\begin{document}
+\begin{center}
+\begin{tabular}{cc}
+\hline
+A & B\\
+C & D\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular*}{.5\textwidth}{@{\extracolsep{\fill}}cc@{}}
+\hline
+A & B\\
+C & D\\
+\hline
+\end{tabular*}
+\end{center}
+\end{document}
