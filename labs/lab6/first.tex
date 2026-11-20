@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{csquotes}
+\usepackage[style=numeric]{biblatex}
+
+\addbibresource{dect.bib}
+
+\begin{document}
+
+\section{Testing biblatex and Biber}
+
+The overview of DECT-2020 NR Release 2 is presented in \textcite{ETSI103636-1}. 
+Performance trade-offs for near-URLLC applications are analyzed in \parencite{Samuylov2024}, while multi-hop routing latency is addressed in \autocite[1]{Asif2025}.
+
+Discrete-time queueing models for DECT-2020 sink and relay nodes are studied in \autocite{Morozova2025Comparison,Morozova2025AoI}.
+
+\printbibliography
+
+\end{document}
